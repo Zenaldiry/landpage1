@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  box-shadow: none;
+  input {
+    outline: none;
+  }
+}
+
+header {
+  background-image: url(../imgs/header.jpg);
+  background-size: cover;
+  background-position: center center;
+  .brand {
+    margin: 100px auto 60px;
+    display: inline-block;
+    padding-bottom: 35px;
+    border-bottom: 5px solid #464b52;
+  }
+  .header-content {
+    h1 {
+      font-size: 60px;
+      color: white;
+      line-height: 75px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 18px;
+      line-height: 25.5px;
+      color: #acacac;
+      width: 40%;
+      margin: auto;
+    }
+  }
+  .countDown {
+    margin: 90px auto 170px !important;
+    display: inline-block;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    .counter {
+      display: inline-block;
+      margin: 0 15px;
+      .count-amount {
+        font-size: 60pt;
+        color: #ffce00;
+      }
+      .count-period {
+        font-size: 30px;
+        color: white;
+      }
+    }
+
+    span {
+      display: block;
+    }
+  }
+}
+
+main {
+  form {
+    width: 40%;
+    height: 60px;
+    margin: 0px auto 75px;
+    .input-group {
+      .input-group-text {
+        padding: 0;
+      }
+      input {
+        border: solid 2px #e6e6e6;
+        text-align: right;
+      }
+      button {
+        height: 65px;
+        background-color: #ffce00;
+        img {
+          padding: 13px 33px;
+        }
+      }
+    }
+  }
+  .game-features {
+    text-wrap: nowrap;
+    font-size: 45px;
+    margin-bottom: 55px;
+    font-weight: bold;
+  }
+  .boxes {
+    margin-bottom: 100px;
+    .box {
+      margin: 10px 0;
+      max-height: 185px !important;
+      display: flex;
+      align-items: center;
+      .con {
+        max-height: 185px !important;
+        width: 100%;
+        padding: 15px;
+        border: solid 4px #fafafa;
+        .col-10 {
+          h3 {
+            font-size: 24px;
+            color: #555555;
+            margin-bottom: 15px;
+          }
+          p {
+            font-size: 15px;
+            color: #a1a1aa;
+          }
+        }
+        img {
+          margin: 46px 0 46px 0px;
+        }
+      }
+      &:nth-of-type(even) {
+        direction: ltr;
+        p,
+        h3 {
+          margin: 0px 75px 0px 25px;
+        }
+      }
+      &:nth-of-type(odd) {
+        p,
+        h3 {
+          margin: 0px 25px 0px 75px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-image: url(../imgs/hsoub/footer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  h2 {
+    margin-top: 61px !important;
+    margin-bottom: 30px !important;
+    font-size: 30px;
+    color: #555555;
+    font-weight: bold;
+  }
+  form {
+    text-align: center;
+    width: 40%;
+    margin: 0px auto 60px;
+    .input-group-text {
+      padding: 0;
+    }
+    .input-group {
+      input {
+        border: solid 2px #e6e6e6;
+        text-align: right;
+      }
+      button {
+        height: 65px;
+        background-color: #393939;
+        color: #ffce00;
+        img {
+          padding: 13px 33px;
+        }
+      }
+    }
+  }
+  .footer-not {
+    background-color: #ffce00e6;
+  }
+  .footer-social {
+    overflow: hidden;
+    background-color: #2a2d2eed;
+    h2 {
+      margin-top: 100px !important;
+      margin-bottom: 35px !important;
+      display: inline-block;
+      color: #fff;
+    }
+    .icons {
+      padding-bottom: 50px;
+      margin-bottom: 35px;
+      a {
+        padding: 20px 30px;
+        background-color: #3e4243;
+        display: inline-block;
+        margin-right: 15px;
+        transition: 0.5s;
+        &:hover {
+          background-color: #ffce00;
+          i {
+            color: #555 !important;
+          }
+        }
+        i {
+          font-size: 24px;
+        }
+      }
+    }
+    hr {
+      height: 2px;
+      width: 50%;
+      color: #464b52;
+      margin: auto;
+      margin-bottom: 35px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .fa-envelope {
+      color: #ffce00;
+    }
+  }
+}
+@media (max-width: 992px) {
+  header {
+    & .header-content {
+      p {
+        width: 70%;
+      }
+    }
+  }
+  form {
+    width: 100% !important;
+  }
+}
