@@ -235,3 +235,40 @@ footer {
     }
   }
 }
+@media (max-width: 767px) {
+  main {
+    & .boxes {
+      & .box {
+        &:nth-of-type(2n + 1) {
+          p,
+          h3 {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  main {
+    & .boxes {
+      & .box {
+        &:nth-of-type(2n) {
+          p,
+          h3 {
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    & .boxes {
+      & .box {
+        & .con {
+          img {
+            margin: 46px 10px 46px 0px;
+          }
+        }
+      }
+    }
+  }
+}
